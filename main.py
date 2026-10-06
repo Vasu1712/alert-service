@@ -32,7 +32,7 @@ app = FastAPI(
     title="Dummy Alert Service",
     version="1.0.0",
     description="Mock monitoring backend for testing the SRE Alert Triage Agent.",
-    servers=[{"url": os.getenv("PUBLIC_BASE_URL", "http://localhost:8000")}],
+    servers=[{"url": os.getenv("PUBLIC_BASE_URL")}],
 )
 
 
